@@ -1,0 +1,82 @@
+// this is the Data Definition file
+// defines a bunch of information about entities
+// an entity can have a bunch of properties
+
+// name = the name of the property to show in the editor
+// meta = the actual metadata value that will be edited
+// type = the type of the value, [string, number, bool]
+// default = the value that it's set to in the editor
+// min = the minimum value, only used for number sliders
+// max = the maximum value, only used for number sliders
+// description = the property's description
+
+spring
+spring1
+{"name": "Jump Power", "meta": "jump", "type": "number", "default": 40, "min": 0, "max": 300, "description": "How far to launch the player when stepped on."}
+{"name": "Keep Velocity", "meta": "keepVel", "type": "bool", "default": true, "description": "If false, the player's velocity is reset when stepping on the spring."}
+{"name": "Sound to play", "meta": "sound", "type": "string", "default": "springy", "description": "The name of the sound to play when triggered"}
+END
+
+npc_lizard
+lizard
+{"name": "Sight Distance", "meta": "maxDist", "type": "string", "default": "800", "description": "The vision range of the lizard"}
+{"name": "Attack Distance", "meta": "attackDist", "type": "string", "default": "100", "description": "How close the lizard needs to be before it starts attacking"}
+{"name": "Alert Sound", "meta": "sndAlert", "type": "string", "default": "lizard_alert", "description": "Sound to play when the lizard detects the player"}
+{"name": "Attack Sound", "meta": "sndAttack", "type": "string", "default": "lizard_bite", "description": "Sound to play when the lizard attacks the player"}
+END
+
+pusher
+rgb_ball
+{"name": "Push Strength", "meta": "strength", "type": "string", "default": "1", "description": "The multiplier for the push effect"}
+END
+
+door
+door
+{"name": "Hidden", "meta": "hide", "type": "bool", "default": "false", "description": "If true, then the door graphic is hidden"}
+{"name": "Next Map Name", "meta": "map", "type": "string", "default": "panel", "description": "The map to take the player to"}
+END
+
+trigger_multiple
+trigger
+{"name": "Target", "meta": "target", "type": "string", "default": "", "description": "The entity to trigger when activated"}
+{"name": "Kill Target", "meta": "killtarget", "type": "string", "default": "", "description": "The name of the entity to remove when this trigger is activated."}
+{"name": "Size X", "meta": "sx", "type": "string", "default": "100", "description": "The trigger's size"}
+{"name": "Size Y", "meta": "sy", "type": "string", "default": "100", "description": "The trigger's size"}
+{"name": "Size Z", "meta": "sz", "type": "string", "default": "100", "description": "The trigger's size"}
+END
+
+player_teleport
+p_teleport
+{"name": "Use Relative", "meta": "relative", "type": "bool", "default": "false", "description": "If true, the object's position is added to the player's position"}
+{"name": "Keep Velocity", "meta": "keepVel", "type": "bool", "default": "false", "description": "If true, the player's velocity is preserved between teleports"}
+{"name": "Reset Camera", "meta": "resetCam", "type": "bool", "default": "true", "description": "Resets the camera's angles when teleported"}
+{"name": "Only Once", "meta": "onlyOnce", "type": "bool", "default": "false", "description": "Delete the entity after it's triggered"}
+END
+
+illusion
+rgb_ball
+END
+
+sound
+snd
+{"name": "Sound Name", "meta": "soundname", "type": "string", "default": "tv_music", "description": "The name of the sound to play"}
+{"name": "Only Once", "meta": "onlyOnce", "type": "bool", "default": "false", "description": "Delete the entity after it's triggered"}
+END
+
+relay
+l_relay
+{"name": "Target", "meta": "target", "type": "string", "default": "", "description": "The entity to trigger when activated"}
+{"name": "Kill Target", "meta": "killtarget", "type": "string", "default": "", "description": "The name of the entity to remove when this trigger is activated."}
+{"name": "Delay", "meta": "delay", "type": "string", "default": "0", "description": "How many seconds to wait before the relay is triggered"}
+{"name": "Refires", "meta": "delay", "type": "string", "default": "-1", "description": "How many times the relay can fire before it is deleted, -1 is infinity"}
+END
+
+start
+player_start
+END
+
+env_sky
+env_sky
+{"name": "Sky Name", "meta": "sky", "type": "string", "default": "ocean", "description": "What to set the skybox to."}
+END
+
