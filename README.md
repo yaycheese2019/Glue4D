@@ -1,7 +1,10 @@
 # Glue4D
 An advanced 3D Engine in Scratch
+<br>
 Glue4D is a super powerful easy-to-use 3D first person shooter engine that's written in Scratch
+<br>
 It is widely considered to be the succesor to Glue3D
+<br>
 Despite it's name, this engine does *not* support 4D graphics
 
 # Features:
